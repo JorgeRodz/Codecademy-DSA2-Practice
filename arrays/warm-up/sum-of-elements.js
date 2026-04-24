@@ -4,7 +4,13 @@
  * @returns {number}
  */
 function sumOfElements(nums) {
-  // Your solution here
+  let totalSum = 0;
+
+  for (let i=0; i < nums.length; i++) {
+    totalSum += nums[i]
+  }
+
+  return totalSum
 }
 
 
