@@ -23,7 +23,8 @@ npm run test:watch
 
 **Run a single exercise:**
 ```bash
-npx jest arrays/find-maximum
+npx jest arrays/warm-up/find-maximum
+npx jest arrays/in-class-exercises/array-unshift
 ```
 
 ---
@@ -33,12 +34,16 @@ npx jest arrays/find-maximum
 ```
 .
 ├── arrays/
-│   ├── <exercise>.js         # Function stub to implement
-│   └── <exercise>.test.js    # Jest tests
+│   ├── warm-up/
+│   │   ├── <exercise>.js         # Function stub to implement
+│   │   └── <exercise>.test.js    # Jest tests
+│   └── in-class-exercises/
+│       ├── <exercise>.js
+│       └── <exercise>.test.js
 └── ...more topics coming
 ```
 
-Each topic has its own folder. Inside you'll find the function stub to implement and a test file to verify your solution.
+Each topic has its own folder, organised into subfolders by category (`warm-up/`, `in-class-exercises/`). Inside each subfolder you'll find the function stub to implement and a test file to verify your solution.
 
 ---
 
@@ -46,10 +51,19 @@ Each topic has its own folder. Inside you'll find the function stub to implement
 
 ### 🗂️ Arrays
 
+#### Warm-up
+
 | # | Exercise | File | Complexity |
 |---|----------|------|------------|
-| 1 | 🔍 Find the Maximum Element | [`arrays/find-maximum.js`](arrays/find-maximum.js) | Time: O(n) · Space: O(1) |
-| 2 | ➕ Sum of All Elements | [`arrays/sum-of-elements.js`](arrays/sum-of-elements.js) | Time: O(n) · Space: O(1) |
+| 1 | 🔍 Find the Maximum Element | [`arrays/warm-up/find-maximum.js`](arrays/warm-up/find-maximum.js) | Time: O(n) · Space: O(1) |
+| 2 | ➕ Sum of All Elements | [`arrays/warm-up/sum-of-elements.js`](arrays/warm-up/sum-of-elements.js) | Time: O(n) · Space: O(1) |
+
+#### In-class Exercises
+
+| # | Exercise | File |
+|---|----------|------|
+| 1 | ⬅️ Array Unshift | [`arrays/in-class-exercises/array-unshift.js`](arrays/in-class-exercises/array-unshift.js) |
+| 2 | 🗑️ Remove At | [`arrays/in-class-exercises/remove-at.js`](arrays/in-class-exercises/remove-at.js) |
 
 ---
 
