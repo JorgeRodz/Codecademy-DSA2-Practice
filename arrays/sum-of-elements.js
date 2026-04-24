@@ -4,14 +4,7 @@
  * @returns {number}
  */
 function sumOfElements(nums) {
-  let arrLength = nums.length
-  let total = 0;
-
-  for (let i = 0; i < arrLength; i++) {
-    total += nums[i]
-  }
-
-  return total
+  // Your solution here
 }
 
 
