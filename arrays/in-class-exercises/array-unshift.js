@@ -13,10 +13,12 @@
  * @returns {number}        - the new length of the array
  */
 function arrayUnshift(arr, ...elements) {
+  // Shift existing elements to the right to make space for new elements
   for (let i = arr.length - 1; i >= 0; i--) {
     arr[i + elements.length] = arr[i];
   }
 
+  // Insert new elements at the beginning
   for (let i = 0; i < elements.length; i++) {
     arr[i] = elements[i];
   }
