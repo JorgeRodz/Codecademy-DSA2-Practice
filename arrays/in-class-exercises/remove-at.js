@@ -7,7 +7,15 @@
  * @returns {any} the removed element
  */
 function removeAt(arr, index) {
-  // Your solution here
+  let removedElement = arr[index]
+
+  for (let i = index; i < (arr.length - 1); i++) {
+    arr[i] = arr[i + 1]
+  }
+
+  arr.length = arr.length - 1
+
+  return removedElement
 }
 
 module.exports = removeAt;
