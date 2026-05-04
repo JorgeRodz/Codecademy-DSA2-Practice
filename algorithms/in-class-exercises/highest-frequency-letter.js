@@ -12,7 +12,29 @@
  * @returns {string} - the letter with the highest frequency
  */
 function highestFrequencyLetter(s) {
-  // Your solution here
+
+  let freq = {} // To save the letter and his frequency
+  let maxCount = 1; // Start with 1; Only if a letter repeats more than 1 time we will update this variable. This works if no letter is repeated more than once
+  let maxLetter = s[0]; // We always initialize this variable with the first letter; Just in case no letter is repeated we ensure the first letter is return
+
+  // Big O notation
+  // Time complexity = O(n) -> We have to loop the string
+  // Space complexity = O(n) -> Same, If a new letter is found we have to add it to the freq object
+  for (let letter of s) {
+    if (freq[letter] === undefined) {
+      freq[letter] = 1
+    } else {
+      freq[letter]++
+
+      if (freq[letter] > maxCount) {
+        maxCount = freq[letter]
+        maxLetter = letter
+      }
+    }
+  }
+
+  return maxLetter
 }
+
 
 module.exports = highestFrequencyLetter;
