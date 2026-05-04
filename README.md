@@ -25,6 +25,7 @@ npm run test:watch
 ```bash
 npx jest arrays/warm-up/find-maximum
 npx jest arrays/in-class-exercises/array-unshift
+npx jest algorithms/in-class-exercises/highest-frequency-letter
 ```
 
 ---
@@ -40,7 +41,10 @@ npx jest arrays/in-class-exercises/array-unshift
 │   └── in-class-exercises/
 │       ├── <exercise>.js
 │       └── <exercise>.test.js
-└── ...more topics coming
+└── algorithms/
+    └── in-class-exercises/
+        ├── <exercise>.js
+        └── <exercise>.test.js
 ```
 
 Each topic has its own folder, organised into subfolders by category (`warm-up/`, `in-class-exercises/`). Inside each subfolder you'll find the function stub to implement and a test file to verify your solution.
@@ -64,6 +68,14 @@ Each topic has its own folder, organised into subfolders by category (`warm-up/`
 |---|----------|------|
 | 1 | ⬅️ Array Unshift | [`arrays/in-class-exercises/array-unshift.js`](arrays/in-class-exercises/array-unshift.js) |
 | 2 | 🗑️ Remove At | [`arrays/in-class-exercises/remove-at.js`](arrays/in-class-exercises/remove-at.js) |
+
+### 🗂️ Algorithms
+
+#### In-class Exercises
+
+| # | Exercise | File |
+|---|----------|------|
+| 1 | 🔡 Highest Frequency Letter | [`algorithms/in-class-exercises/highest-frequency-letter.js`](algorithms/in-class-exercises/highest-frequency-letter.js) |
 
 ---
 
