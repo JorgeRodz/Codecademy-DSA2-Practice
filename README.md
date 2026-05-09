@@ -25,6 +25,7 @@ npm run test:watch
 ```bash
 npx jest arrays/warm-up/find-maximum
 npx jest arrays/in-class-exercises/array-unshift
+npx jest arrays/in-class-exercises/merge-sorted-arrays
 npx jest algorithms/in-class-exercises/highest-frequency-letter
 ```
 
@@ -68,6 +69,7 @@ Each topic has its own folder, organised into subfolders by category (`warm-up/`
 |---|----------|------|
 | 1 | ⬅️ Array Unshift | [`arrays/in-class-exercises/array-unshift.js`](arrays/in-class-exercises/array-unshift.js) |
 | 2 | 🗑️ Remove At | [`arrays/in-class-exercises/remove-at.js`](arrays/in-class-exercises/remove-at.js) |
+| 3 | 🔀 Merge Sorted Arrays | [`arrays/in-class-exercises/merge-sorted-arrays.js`](arrays/in-class-exercises/merge-sorted-arrays.js) |
 
 ### 🗂️ Algorithms
 
