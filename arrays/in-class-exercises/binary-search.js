@@ -5,7 +5,26 @@
  * @returns {boolean}
  */
 function binarySearch(nums, target) {
-  // Your solution here
+  let left = 0;
+  let right = nums.length - 1;
+
+  while (left <= right) {
+    let middleIndex = Math.floor((left + right) / 2)
+
+    if (nums[middleIndex] === target) {
+      return true
+    }
+
+    if (target > nums[middleIndex]) {
+      left = middleIndex + 1;
+    }
+
+    if (target < nums[middleIndex]) {
+      right = middleIndex - 1;
+    }
+  }
+
+  return false
 }
 
 module.exports = binarySearch;
