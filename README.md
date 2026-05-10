@@ -28,6 +28,7 @@ npx jest arrays/in-class-exercises/array-unshift
 npx jest arrays/in-class-exercises/merge-sorted-arrays
 npx jest arrays/in-class-exercises/binary-search
 npx jest algorithms/in-class-exercises/highest-frequency-letter
+npx jest others/reverse-string
 ```
 
 ---
@@ -43,10 +44,13 @@ npx jest algorithms/in-class-exercises/highest-frequency-letter
 │   └── in-class-exercises/
 │       ├── <exercise>.js
 │       └── <exercise>.test.js
-└── algorithms/
-    └── in-class-exercises/
-        ├── <exercise>.js
-        └── <exercise>.test.js
+├── algorithms/
+│   └── in-class-exercises/
+│       ├── <exercise>.js
+│       └── <exercise>.test.js
+└── others/
+    ├── <exercise>.js
+    └── <exercise>.test.js
 ```
 
 Each topic has its own folder, organised into subfolders by category (`warm-up/`, `in-class-exercises/`). Inside each subfolder you'll find the function stub to implement and a test file to verify your solution.
@@ -80,6 +84,12 @@ Each topic has its own folder, organised into subfolders by category (`warm-up/`
 | # | Exercise | File |
 |---|----------|------|
 | 1 | 🔡 Highest Frequency Letter | [`algorithms/in-class-exercises/highest-frequency-letter.js`](algorithms/in-class-exercises/highest-frequency-letter.js) |
+
+### 🗂️ Others
+
+| # | Exercise | File |
+|---|----------|------|
+| 1 | 🔄 Reverse String | [`others/reverse-string.js`](others/reverse-string.js) |
 
 ---
 
